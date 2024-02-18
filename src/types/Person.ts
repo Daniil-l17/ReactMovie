@@ -8,7 +8,7 @@ export interface IpersonPopular {
 
 export interface Doc {
   id: number
-  name?: string
+  name?: string | undefined
   enName?: string
   photo: string
   age?: number

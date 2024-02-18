@@ -4,7 +4,6 @@ import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 import { Menu } from "@/components/menu/Menu";
 const inter = Overpass({ subsets: ["latin"] });
-import { ChakraProvider } from '@chakra-ui/react'
 import { LeftMenu } from "@/components/leftMenu/LeftMenu";
 import { ReactQueryProvader } from "./ReactQueryProvader";
 export const metadata: Metadata = {
@@ -24,14 +23,12 @@ export default function RootLayout({
       <ReactQueryProvader>
     <html lang="ru">
       <body className={inter.className}>
-      <ChakraProvider>
       <NextTopLoader />
-      <div className="flex justify-between h-[100vh]">
+      <div className="flex justify-between">
         <Menu/>
         {children}
         <LeftMenu/>
       </div>
-      </ChakraProvider>
         </body>
     </html>
       </ReactQueryProvader>

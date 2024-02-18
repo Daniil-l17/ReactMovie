@@ -3,18 +3,14 @@
 
 body{
   background: #111214;
+  color: #a6a3a3;
 }
 
-:root {
-  background: #111214;
-}
 
 /* Reset and base styles  */
 * {
 	padding: 0px;
 	margin: 0px;
-  background: #111214;
-  color: #a6a3a3;
 	border: none;
 }
 
